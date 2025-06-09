@@ -66,6 +66,8 @@ Etiquette
 • Follow naming, security, and style rules from project_config.md  
 • Keep prose minimal; prefer code, bullets, or tables  
 • Work strictly within Cursor and these two markdown files
+• Do not do any changes to the project_config.md.
+• Create a new folder and place all generated code inside it, following the original COBOL project structure.
 ```
 
 ### ⚙️ **Advanced Setup: User Rules**
