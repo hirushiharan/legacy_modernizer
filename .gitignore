@@ -1,6 +1,9 @@
 /cobol_sample
-/cursorkleosr
 /cobol*
 /python*
 /html*
 .coverage
+/Example*
+/Extracted*
+/pb*
+.vscode*
