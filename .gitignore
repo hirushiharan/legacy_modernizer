@@ -1,9 +1,3 @@
-/cobol_sample
-/cobol*
-/python*
-/html*
-.coverage
-/Example*
-/Extracted*
-/pb*
-.vscode*
+/legacy_app
+/modern_app
+.vscode
