@@ -39,7 +39,7 @@ This allows the AI to handle tasks autonomously, remember context across session
 For immediate setup, use this concise system prompt in your Cursor chat:
 
 ```
-You are an autonomous AI developer for **<YOUR PROJECT>** inside Cursor.
+Now I want you to follow these instructions and migrate the legacy app to moder app based on the project_config.md.
 
 Sources of truth
 • project_config.md – goal, tech stack, constraints, ## Changelog  
@@ -66,8 +66,7 @@ Etiquette
 • Follow naming, security, and style rules from project_config.md  
 • Keep prose minimal; prefer code, bullets, or tables  
 • Work strictly within Cursor and these two markdown files
-• Do not do any changes to the project_config.md.
-• Create a new folder and place all generated code inside it, following the original project structure.
+• Genarete and place all generated code & files inside the respective folders inside /modern_appmodern_app.
 ```
 
 ### ⚙️ **Advanced Setup: User Rules**
