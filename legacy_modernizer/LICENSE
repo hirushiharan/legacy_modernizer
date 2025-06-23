@@ -1,0 +1,53 @@
+MIT License
+
+Legacy Modernizer: Autonomous AI Workflow for Legacy App Modernization
+Based on the original kleosr/cursorkleosr project (https://github.com/kleosr/cursorkleosr)
+
+Copyright (c) 2025 Kleosr and Contributors
+
+Original Project Contributors:
+- Kleosr (Original Author) - https://github.com/kleosr/cursorkleosr
+- Atalas (@atalas) - https://forum.cursor.com/u/atalas
+- Guayusa (@Guayusa) - https://forum.cursor.com/u/Guayusa  
+- Stevejb (@stevejb) - https://forum.cursor.com/u/stevejb
+- AaronAgility (@AaronAgility) - https://forum.cursor.com/u/aaronagility
+- Davesienk (@davesienk) - https://forum.cursor.com/u/davesienk
+- Marlon (@Marlon) - https://forum.cursor.com/u/marlon
+- Contributors to the original kleosr/cursorkleosr concepts
+
+Modifications for Legacy App Modernization:
+- Specialized workflow for legacy application migration
+- Enhanced business analysis capabilities (BRD/BRED generation)
+- Technology-agnostic migration patterns
+- Extended 5-phase migration process
+- Improved documentation and validation steps
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+ORIGINAL PROJECT INFORMATION:
+Repository: https://github.com/kleosr/cursorkleosr
+Stars: 248+ ⭐
+Forks: 43+ 🍴
+Focus: "Cursor IDE: Unleash Lightning-Fast Automation"
+Forum Discussion: https://forum.cursor.com/t/guide-a-simpler-more-autonomous-ai-workflow-for-cursor/70688
+
+This project is a derivative work that maintains the original MIT License terms
+while extending functionality specifically for legacy application modernization. 
