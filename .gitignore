@@ -1,3 +1,7 @@
 /legacy_app
 /modern_app
 .vscode
+
+# Ignore the original files
+*project_config.md
+*workflow_status.md
