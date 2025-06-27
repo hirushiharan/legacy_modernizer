@@ -1,22 +1,70 @@
-# Complete Legacy App Modernization Guide
+# Complete Legacy Application Modernization Guide
 
-An autonomous AI workflow system designed for migrating any legacy applications to modern technology stacks.
+An autonomous AI workflow system engineered for seamlessly migrating legacy applications to cutting-edge modern technology stacks.
+
+## Table of Contents
+
+- [🎯 What This Does](#-what-this-does)
+- [🏗️ Detailed Migration Workflow: Copy & Paste System Prompt](#️-detailed-migration-workflow-copy--paste-system-prompt)
+  - [STEP 1: Project Structure Setup](#step-1-project-structure-setup)
+  - [STEP 2: Legacy Application Analysis](#step-2-legacy-application-analysis)
+  - [STEP 3: Requirements Engineering](#step-3-requirements-engineering)
+  - [STEP 4: Follow Migration Instructions](#step-4-follow-migration-instructions)
+  - [STEP 5: Final Testing & Deployment](#step-5-final-testing--deployment)
+- [🔄 How It Works: The Core Concept](#-how-it-works-the-core-concept)
+- [📋 The Two Key Files](#-the-two-key-files)
+- [🎯 Migration Success Criteria](#-migration-success-criteria)
+- [🔧 Enhanced Migration Features](#-enhanced-migration-features)
+- [📚 Documentation Generated](#-documentation-generated)
+- [🚀 Getting Started](#-getting-started)
+- [🔧 Advanced Migration Patterns](#-advanced-migration-patterns)
+- [📋 Prerequisites](#-prerequisites)
+- [🔧 Advanced Configuration](#-advanced-configuration)
+- [🚀 Success Metrics](#-success-metrics)
+- [🚨 Important Notes](#-important-notes)
+- [🔧 Quick Troubleshooting](#-quick-troubleshooting)
+- [📝 Example Migration Flow](#-example-migration-flow)
+- [Migration-Specific Guidelines](#migration-specific-guidelines)
+- [🤝 Support](#-support)
+- [📄 License](#-license)
 
 ## 🎯 What This Does
 
-This system provides a structured, autonomous approach to legacy application modernization with:
+This sophisticated system delivers a methodical, autonomous approach to legacy application modernization, featuring state-of-the-art capabilities that transform outdated systems into modern, scalable solutions:
 
-- **Comprehensive Business Analysis**: Extracts business requirements and creates detailed documentation
-- **Technical Migration Planning**: Creates reverse engineering documents with specific migration rules
-- **Automated Implementation**: Generates modern applications following extracted requirements
-- **Quality Assurance**: Ensures functional parity and business logic preservation
+- **Comprehensive Business Analysis**: Intelligently extracts and documents business requirements with precision and thoroughness
+- **Strategic Technical Migration Planning**: Architects detailed reverse engineering documents complete with specific, actionable migration rules
+- **Automated Implementation Excellence**: Generates robust modern applications that faithfully follow extracted requirements
+- **Rigorous Quality Assurance**: Guarantees functional parity while preserving critical business logic throughout the transformation
 
 ## 🏗️ Detailed Migration Workflow: Copy & Paste System Prompt
 
-**Use this system prompt in AI Agent chat to start your legacy application to modern technology stack migration:**
+**Leverage this comprehensive system prompt in your AI Agent chat to initiate the transformation of your legacy application into a modern technology stack masterpiece:**
 
 **STEP 1: Project Structure Setup**
-- Create two folders: legacy_app and modern_app
+- Create the file structure below.
+
+```
+your_project/
+├── legacy_app/                                 # Your original application
+│   ├── [Your Legacy Application]/              # Original application files
+│   └── project_structure.md                    # Legacy application project structure
+├── modern_app/                                 # Generated modern application
+│   ├── architecture/                           # Project architecture documents
+│   ├── code/                                   # Folder to contain the generated modern code
+│     ├── frontend/                             # Modern frontend application boilerplate
+│        └── [Your Frontend Boilerplate Code]/  # Boilerplate application files
+│     └── backend/                              # Modern backend application boilerplate
+│        └── [Your Backend Boilerplate Code]/   # Boilerplate application files
+│   ├── database/                               # Database documents
+│   ├── extracted_brd/                          # Business Requirements Documents
+│   ├── extracted_bred/                         # Business Reverse Engineering Documents
+└── legacy_modernizer/                          # Project configuration
+    ├── instructions.md                         # This comprehensive guide
+    ├── project_config.md                       # Project configuration
+    ├── workflow_state.md                       # Dynamic workflow state
+    └── LICENSE                                 # License information
+```
 - Generate the Legacy App project structure
 - Keep the Legacy App & project structure analysis inside the legacy_app folder
 
@@ -28,7 +76,99 @@ This system provides a structured, autonomous approach to legacy application mod
 
 Mention your Legacy application & Modern application tech stack in the below prompt
 
-'''I want to migrate my existing legacy application which is in <LEGACY_APP_TECH_STACK> to modern application where the frontend is in <FRONTEND_TECH_STACK> and the backend is in <BACKEND_TECH_STACK>. I want you to be my autonomous AI developer for this migration task. First, I want you to update the project_config.md file based on your project analysis. Then I want you to create the BRD (Business Requirements Document) with all the requirements and also the BRED (Business Reverse Engineering Document) including all the reverse engineering rules. Keep the extracted BRDs inside the modern_app/extracted_brd and the BREDs inside the modern_app/extracted_bred.'''
+'''
+Migration Tasks
+
+1. Update project_config.md
+   1. Incorporate insights from your previous project analysis.
+   2. Do not modify any other files in this step.
+   3. The modern codebase already contains boilerplates under modern_app/code/; use only <FRONTEND_TECH_STACK>, <BACKEND_TECH_STACK>, and <DATABASE>.
+
+2. Create BRD (Business Requirements Document)
+   1. Perform an exhaustive walkthrough of the legacy application (all front-end and back-end paths).
+   2. Capture at minimum:
+      - Project overview
+      - Functional & non-functional requirements
+      - Business rules
+      - Use cases
+      - Success criteria
+      - Assumptions & dependencies
+      - Risk assessments
+   3. Add any additional topics that are relevant; omit any that clearly do not apply.
+   4. Save each BRD to modern_app/extracted_brd/ following the naming rule brd_<module>.md.
+
+3. Create BRED (Business Reverse Engineering Document)
+   1. Analyse system internals: architecture, feature set, coding patterns, legacy-to-modern mapping, QA rules, risk mitigations.
+   2. Map every legacy feature to its modern equivalent.
+   3. Add missing but relevant topics; skip irrelevant ones.
+   4. Store each BRED in modern_app/extracted_bred/ with the name bred_<module>.md.
+
+4. Document Legacy Database Architecture
+   1. Detail (include or omit items as appropriate):
+      - Schema, tables, fields, relationships
+      - Core entity groups & detailed entity relationships
+      - Indexing strategy & performance optimisations
+      - Constraints, business rules & security considerations
+      - Data retention, backup & recovery
+      - Data-migration mapping to <DATABASE>
+   2. Place outputs in modern_app/database/ (file names: db_<topic>.md).
+
+5. Document Overall System Architecture
+   1. System-level: component, data, security, deployment, migration, monitoring/observability *(add extra relevant subsections, omit non-applicable ones).*
+   2. Frontend: project structure, component hierarchy, state management, real-time communication, service registration & configuration, styling/theme, performance optimisation *(extend/trim as needed).*
+   3. API design: endpoints, authentication & authorization, module APIs, error handling, rate limiting, versioning *(extend/trim as needed).*
+   4. Database: reference work from Task 4.
+   5. Save files in modern_app/architecture/ (names: arch_<layer>.md).
+
+Conventions & Governance
+
+1. Directory & File-Naming
+   - Use lowercase, hyphen-separated names (brd_customer-management.md).
+   - All documents are Markdown (.md) that begin with an H1 title and <!-- [toc] --> for auto TOC.
+
+2. Diagrams
+   - Embed Mermaid or PlantUML snippets inline.
+   - Larger images go to modern_app/architecture/diagrams/ (PNG or SVG, 16:9 aspect).
+
+3. Cross-Referencing & Traceability
+   - Link related sections across BRD, BRED and architecture docs with relative paths.
+   - Provide a traceability matrix (traceability_matrix.md) mapping legacy items to modern components.
+
+4. Definition of Done / Quality Gates
+   - ≥ 80 % unit-test coverage on generated .NET code skeletons.
+   - Pass dotnet format, eslint, and markdownlint in CI.
+
+5. Iteration Cadence & Checkpoints
+   - Commit one atomic PR per numbered task.
+   - After every commit, update progress-summary.md in repo root (≤ 200 words).
+
+6. Risk & Dependency Flags
+   - Tag unknown external integrations with TODO:<owner> comments.
+
+7. Security & Compliance
+   - Include STRIDE threat-models and OWASP ASVS mappings in architecture docs.
+
+8. Performance Budgets
+   - Target P99 API latency ≤ 300 ms under 500 RPS; document SLOs/SLIs in BRD.
+
+9. Placeholder Handling
+   - If any <…> placeholder remains unresolved, fail fast and raise an issue.
+
+10. Deliverable Checklist (for workflow promotion)
+    - project_config.md updated.
+    - All BRDs in modern_app/extracted_brd/.
+    - All BREDs in modern_app/extracted_bred/.
+    - Legacy DB docs in modern_app/database/.
+    - Architecture docs (and diagrams) in modern_app/architecture/ + modern_app/architecture/diagrams/.
+    - traceability_matrix.md present.
+    - progress-summary.md updated after every task.
+
+Etiquette
+
+- Do not modify workflow_state.md at this stage.
+- For every section or subtopic listed above, add it if the legacy application requires it, and omit it if it is not applicable.
+- Any folders/documents you are creating, create it only inside modern_app folder.
+'''
 
 **STEP 4: Follow Migration Instructions**
 
@@ -41,287 +181,281 @@ Ignore all other memory.
 
 Operating loop  
 1. Read workflow_state.md → note Phase & Status  
-2. Read project_config.md → recall standards & constraints  
-3. Act by phase  
-   • ANALYZE / BLUEPRINT → draft or refine ## Plan  
+2. Read project_config.md → recall standards & constraints
+3. Review generated architecture, database, BRD & BRED documents in modern_app/ for a full grasp of the legacy system and target structure.
+4. Act by phase  
+   • ANALYZE / BLUEPRINT → draft or refine ## Plan.
    • CONSTRUCT → implement steps exactly as approved  
-   • VALIDATE → run tests; on success set Status = COMPLETED  
-4. Write back to workflow_state.md  
+   • VALIDATE → run tests; on success set Status = COMPLETED
+5. Split phases into small tasks. Fully implement & test each task before starting the next.
+6. Write back to workflow_state.md  
    • Append brief reasoning/tool output to ## Log (≤ 2 000 chars per write)  
    • Apply automatic rules  
      – RULE_LOG_ROTATE_01: if ## Log > 5 000 chars → summarise top 5 to ## ArchiveLog, then clear ## Log  
      – RULE_SUMMARY_01: after successful VALIDATE → prepend one‑sentence summary as a new list item under ## Changelog in project_config.md  
-5. Repeat or await user input
+7. Repeat or await user input
 
 Etiquette  
 • For any new idea first enter BLUEPRINT, store the step-by-step plan in ## Plan, set Status = NEEDS_PLAN_APPROVAL, and wait for confirmation  
 • Produce complete, idiomatic code; no TODOs or placeholders  
 • Follow naming, security, and style rules from project_config.md  
 • Keep prose minimal; prefer code, bullets, or tables  
-• Work strictly within the IDE and these two markdown files
-• Generate and place all generated code & files inside the respective folders inside /modern_app.'''
+• Work strictly within the IDE and these two markdown files. If necessory, refer the generated marckdown files inside modern_app/.
+• Generate and place all code & files in their correct sub-folders under /modern_app.'''
 
 **STEP 5: Final Testing & Deployment**
 
 '''Now I want to run & test the migrated modern application. Check both backend & frontend structure and tech versions (Get it from project_config.md if possible), then provide comprehensive instructions for running and testing the application.'''
 
-## 📁 Expected File Structure
+## 🔄 How It Works: The Core Concept
 
-```
-your_project/
-├── legacy_app/                         # Your original application
-│   ├── [Your Legacy Application]/      # Original application files
-│   └── project_structure.md            # Legacy application project structure.
-├── modern_app/                         # Generated modern application
-│   ├── extracted_brd/                  # Business Requirements Documents
-│   ├── extracted_bred/                 # Business Reverse Engineering Documents
-│   ├── frontend/                       # Modern frontend application
-│   └── backend/                        # Modern backend application
-└── legacy_modernizer/                  # Project configuration
-    ├── instructions.md                 # This comprehensive guide
-    ├── project_config.md               # Project configuration
-    ├── workflow_state.md               # Dynamic workflow state
-    └── LICENSE                         # License information
-```
+This intelligent system operates through an orchestrated, self-managing loop that ensures consistent progress and quality throughout the migration journey:
 
-## 🔄 How It Works: The Core Idea
+1. **Situational Awareness**: The AI continuously reads the current state and established rules from `workflow_state.md`
+2. **Strategic Decision Making**: It determines optimal next actions based on predefined rules and the comprehensive task plan
+3. **Intelligent Execution**: It leverages advanced AI Agent capabilities, including code editing and terminal command execution, to perform sophisticated actions
+4. **Meticulous Documentation**: It systematically records all activities and outcomes in `workflow_state.md`
+5. **Automated Optimization**: It intelligently manages log sizes and preserves critical insights through rotation and summarization
+6. **Continuous Iteration**: The cycle repeats seamlessly, ensuring steady progress toward completion
 
-The AI operates in a loop:
-1. It reads the current situation and rules from `workflow_state.md`.
-2. It decides what to do next based on those rules and the task plan.
-3. It uses AI Agent features (like editing code or running commands in the terminal) to perform the action.
-4. It records what happened in `workflow_state.md`.
-5. It automatically manages log size and preserves insights via rotation and summarization.
-6. It repeats the cycle.
+For legacy application modernization, this translates into an elegantly structured migration ecosystem:
 
-For legacy app modernization, this translates to a structured migration loop:
-1. **Project Setup**: Creates the proper folder structure and analyzes the legacy application
-2. **Business Analysis**: Extracts comprehensive business requirements and reverse engineering rules
-3. **Migration Planning**: Creates detailed migration strategies and implementation plans
-4. **Implementation**: Builds the modern application following the extracted requirements
-5. **Testing & Validation**: Ensures the migrated application meets all business requirements
+1. **Foundation Establishment**: Constructs the optimal folder architecture and conducts thorough legacy application analysis
+2. **Intelligence Gathering**: Extracts comprehensive business requirements and develops sophisticated reverse engineering strategies
+3. **Strategic Planning**: Formulates detailed migration blueprints and implementation roadmaps
+4. **Precision Implementation**: Builds the modern application with unwavering adherence to extracted requirements
+5. **Quality Validation**: Ensures the migrated application exceeds all business requirements and performance standards
 
-This allows the AI to handle complex migration tasks autonomously, preserving business logic while modernizing the technology stack.
+This sophisticated approach empowers the AI to autonomously handle complex migration challenges while meticulously preserving business logic and implementing modern technology excellence.
 
 ## 📋 The Two Key Files
 
-1. **`project_config.md` (Long-Term Memory):**
-   - Contains the stable basics of your project, such as main goals, technologies used, important coding rules, and limitations.
-   - Includes an auto-populated `## Changelog` section that tracks completed work summaries with dates.
-   - Think of it as the project's "constitution." The AI reads it to understand the big picture. You set this up once and update it rarely.
+### 1. **`project_config.md` (Strategic Long-Term Memory):**
+   - **Foundation Repository**: Houses the essential project fundamentals including core objectives, selected technologies, critical coding standards, and operational constraints
+   - **Progress Chronicle**: Features an intelligently auto-populated `## Changelog` section that meticulously tracks completed milestones with precise timestamps
+   - **Strategic Blueprint**: Functions as the project's constitutional framework—the AI's primary reference for understanding the overarching vision. Established once during initialization and refined sparingly for strategic adjustments
 
-2. **`workflow_state.md` (Dynamic State, Rules & Log):**
-   - This is the AI's main workspace file. It's constantly read and updated.
-   - **`## State`:** Shows the current workflow phase (Analyze, Blueprint, Construct, Validate) and status (Ready, Blocked, etc.).
-   - **`## Plan`:** Holds the step-by-step plan for the current task (created by the AI in the Blueprint phase).
-   - **`## Rules`:** Contains *all* the rules the AI follows for workflow, memory, tools, error handling, **and now log management**.
-   - **`## Log`:** Records everything the AI does and observes during the session. **NEW:** Automatically rotated when it exceeds 5,000 characters.
-   - **`## ArchiveLog`:** **NEW:** Stores condensed summaries of rotated logs to preserve important findings.
+### 2. **`workflow_state.md` (Dynamic Operational Intelligence):**
+   - **Mission Control Center**: Serves as the AI's primary operational workspace, continuously monitored and dynamically updated
+   - **`## State`**: Displays real-time workflow phase status (Analyze, Blueprint, Construct, Validate) and operational readiness indicators (Ready, Blocked, Processing, etc.)
+   - **`## Plan`**: Contains the meticulously crafted, step-by-step execution strategy for current objectives (intelligently generated by the AI during Blueprint phases)
+   - **`## Rules`**: Encompasses the comprehensive governance framework guiding AI behavior across workflow management, memory optimization, tool utilization, error resolution, **and advanced log management**
+   - **`## Log`**: Maintains detailed records of all AI activities and observations throughout active sessions. **Enhanced Feature**: Automatically optimized when exceeding 5,000 characters
+   - **`## ArchiveLog`**: **Advanced Feature**: Preserves strategically condensed summaries of rotated logs, ensuring critical insights remain accessible
 
-*(The old `memory-bank/` and `.cursor/rules/` directories are **no longer used** by this system.)*
+*Note: Legacy `memory-bank/` and `.cursor/rules/` directories are **obsolete** and no longer utilized by this advanced system.*
 
 ## 🎯 Migration Success Criteria
 
-### Phase 1: Analysis Complete ✅
-- [ ] Legacy app project structure documented
-- [ ] Core application modules identified
-- [ ] Database schema and relationships mapped
-- [ ] Key features and workflows documented
-- [ ] Technology stack analysis complete
+### Phase 1: Comprehensive Analysis Achievement ✅
+- [ ] **Architectural Documentation**: Legacy application project structure meticulously documented and analyzed
+- [ ] **Modular Identification**: Core application modules systematically identified and catalogued
+- [ ] **Database Intelligence**: Schema relationships and data dependencies comprehensively mapped
+- [ ] **Feature Inventory**: Key functionalities and operational workflows thoroughly documented
+- [ ] **Technology Assessment**: Complete technology stack analysis with modernization recommendations
 
-### Phase 2: Requirements Engineering Complete ✅
-- [ ] Complete BRD generated
-- [ ] Complete BRED generated
-- [ ] Migration mapping rules defined
-- [ ] UI component mappings documented
-- [ ] Data access patterns converted
+### Phase 2: Requirements Engineering Mastery ✅
+- [ ] **Business Requirements Excellence**: Comprehensive BRD generated with exhaustive detail
+- [ ] **Technical Reverse Engineering**: Complete BRED developed with precise migration specifications
+- [ ] **Migration Blueprint**: Strategic mapping rules defined for seamless transition
+- [ ] **Component Transformation**: UI component mappings documented with modern equivalents
+- [ ] **Pattern Modernization**: Legacy data access patterns successfully converted to contemporary standards
 
-### Phase 3: Modern Application Complete ✅
-- [ ] Modern backend implemented
-- [ ] Modern frontend implemented
-- [ ] Backend-frontend integration working
-- [ ] All business logic preserved
-- [ ] Database connectivity established
+### Phase 3: Modern Application Excellence ✅
+- [ ] **Backend Architecture**: Robust modern backend implemented with scalable design patterns
+- [ ] **Frontend Innovation**: Contemporary frontend developed with optimal user experience
+- [ ] **Seamless Integration**: Backend-frontend communication optimized and thoroughly tested
+- [ ] **Logic Preservation**: All critical business logic successfully migrated and validated
+- [ ] **Data Connectivity**: Modern database connections established with enhanced security
 
-### Phase 4: Testing & Deployment Ready ✅
-- [ ] Comprehensive testing instructions provided
-- [ ] Backend and frontend structure validated
-- [ ] Tech versions documented and compatible
-- [ ] Application successfully runs and tests
-- [ ] Functional parity with legacy application confirmed
+### Phase 4: Deployment Readiness & Validation ✅
+- [ ] **Testing Framework**: Comprehensive testing protocols developed and documented
+- [ ] **Structural Validation**: Both backend and frontend architectures verified for excellence
+- [ ] **Technology Compatibility**: Version compatibility confirmed and optimized
+- [ ] **Operational Excellence**: Application successfully executes with full testing coverage
+- [ ] **Functional Parity**: Complete feature equivalency with legacy system confirmed
 
 ## 🔧 Enhanced Migration Features
 
-### 📋 **Comprehensive Documentation Generation**
-- **Automatic BRD Creation**: Extracts business requirements from legacy codebase
-- **Detailed BRED Generation**: Creates technical migration mappings and rules
-- **Architecture Documentation**: Documents both legacy and modern architectures
-- **Migration Validation**: Ensures all requirements are met in the modern application
+### 📋 **Intelligent Documentation Generation**
+- **Automated BRD Creation**: Sophisticated algorithms extract and document business requirements with unprecedented accuracy
+- **Advanced BRED Development**: Creates comprehensive technical migration mappings with detailed implementation strategies
+- **Architectural Intelligence**: Documents both legacy and modern architectures with comparative analysis
+- **Validation Assurance**: Ensures every requirement is meticulously addressed in the modern implementation
 
-### 🔍 **Legacy Application Analysis**
-- **Code Structure Analysis**: Understands legacy application organization
-- **Business Logic Extraction**: Identifies core business rules and workflows
-- **Data Flow Mapping**: Maps data relationships and access patterns
-- **UI Behavior Documentation**: Captures user interface interactions and flows
+### 🔍 **Comprehensive Legacy Application Analysis**
+- **Structural Intelligence**: Deep understanding of legacy application organization and dependencies
+- **Business Logic Extraction**: Identifies and preserves core business rules and operational workflows
+- **Data Flow Mapping**: Creates detailed maps of data relationships and access patterns
+- **User Experience Documentation**: Captures and enhances user interface interactions and navigation flows
 
-### 🎯 **Migration Quality Assurance**
-- **Functional Parity Validation**: Ensures modern app matches legacy functionality
-- **Performance Benchmarking**: Compares performance between legacy and modern systems
-- **Data Integrity Verification**: Validates data consistency post-migration
-- **User Acceptance Testing**: Provides testing scenarios based on BRD criteria
+### 🎯 **Advanced Migration Quality Assurance**
+- **Functional Parity Validation**: Rigorous testing ensures modern application exceeds legacy functionality
+- **Performance Optimization**: Comparative analysis and enhancement of system performance metrics
+- **Data Integrity Assurance**: Comprehensive validation of data consistency throughout the migration process
+- **User Acceptance Excellence**: Provides detailed testing scenarios based on extracted BRD criteria
 
-### **Business Requirements Extraction**
-- Automatically analyzes legacy applications to extract business requirements
-- Creates comprehensive BRD with functional and non-functional requirements
-- Documents user workflows, business rules, and acceptance criteria
+### **Strategic Business Requirements Extraction**
+- Employs advanced analysis techniques to automatically extract business requirements from legacy systems
+- Creates comprehensive BRD documentation encompassing functional and non-functional requirements
+- Documents sophisticated user workflows, business rules, and measurable acceptance criteria
 
-### **Technical Migration Mapping**
-- Generates detailed BRED with specific migration rules
-- Maps legacy components to modern patterns
-- Converts legacy data access to modern API patterns
-- Transforms legacy code to modern programming languages
+### **Precision Technical Migration Mapping**
+- Generates detailed BRED documentation with specific, actionable migration rules
+- Creates intelligent mappings from legacy components to modern architectural patterns
+- Transforms legacy data access methodologies into contemporary API-driven approaches
+- Seamlessly converts legacy code structures to modern programming paradigms
 
-### **Quality Assurance**
-- Ensures functional parity between legacy and modern applications
-- Validates business logic preservation
-- Provides comprehensive testing strategies
-- Documents migration decisions and rationale
+### **Excellence-Driven Quality Assurance**
+- Guarantees functional parity between legacy and modern applications through rigorous testing
+- Validates comprehensive business logic preservation with detailed verification protocols
+- Provides strategic testing methodologies and comprehensive quality assurance frameworks
+- Documents all migration decisions with clear rationale and implementation guidance
 
 ## 📚 Documentation Generated
 
-The system automatically creates comprehensive documentation:
+This sophisticated system automatically generates comprehensive, professional-grade documentation:
 
-### Business Requirements Documents (BRD)
-- Executive summary and business context
-- Functional and non-functional requirements
-- User interface and business logic requirements
-- Security, integration, and reporting requirements
-- Acceptance criteria and validation rules
+### **Business Requirements Documents (BRD)**
+- **Executive Summary**: Strategic business context and transformation objectives
+- **Comprehensive Requirements**: Detailed functional and non-functional specifications
+- **User Experience Specifications**: Interface requirements and business logic documentation
+- **Security & Integration Framework**: Comprehensive security protocols and system integration requirements
+- **Validation Criteria**: Measurable acceptance criteria and success metrics
 
-### Business Reverse Engineering Documents (BRED)  
-- Legacy application analysis
-- Migration mapping rules and patterns
-- UI component and data access mappings
-- Code conversion and database migration rules
-- Testing strategies and risk mitigation plans
+### **Business Reverse Engineering Documents (BRED)**  
+- **Legacy System Analysis**: Thorough examination of existing application architecture
+- **Migration Strategy**: Detailed mapping rules and transformation patterns
+- **Component Transformation**: UI component mappings and modern data access strategies
+- **Implementation Guidelines**: Code conversion rules and database migration protocols
+- **Quality Assurance Framework**: Testing strategies and comprehensive risk mitigation plans
 
 ## 🚀 Getting Started
 
-1. **Prepare Project Structure:**
+### **1. Foundation Preparation:**
    ```bash
-   # Create the required folder structure
+   # Establish the essential project architecture
    mkdir legacy_app modern_app
-   # Place your legacy application in legacy_app/
+   # Deploy your legacy application into the legacy_app directory
    ```
 
-2. **Configure the System:**
-   - Fill in `project_config.md` with your specific migration goals and target technology stack
-   - Ensure `workflow_state.md` has the proper structure
-   - Place your legacy application in the `legacy_app` folder
+### **2. Strategic System Configuration:**
+   - **Project Configuration**: Populate `project_config.md` with your specific migration objectives and target technology ecosystem
+   - **Workflow Initialization**: Ensure `workflow_state.md` contains the proper structural framework
+   - **Legacy Application Deployment**: Position your legacy application within the designated `legacy_app` folder
 
-3. **Start the Migration:**
-   - Copy the system prompt from the Quick Start section above
-   - Paste it into AI Agent and specify your legacy and target technology stacks
-   - The AI will automatically progress through all phases
-   - Implementation will follow the extracted requirements using your chosen modern technology stack
-   - Final testing and deployment preparation will complete the process
+### **3. Migration Execution:**
+   - **System Prompt Deployment**: Copy the comprehensive system prompt from the detailed workflow section above
+   - **AI Agent Integration**: Deploy the prompt in your AI Agent environment while specifying both legacy and target technology stacks
+   - **Autonomous Progression**: The AI will automatically advance through all transformation phases
+   - **Requirements-Driven Implementation**: Development will proceed according to extracted requirements using your selected modern technology stack
+   - **Comprehensive Validation**: Final testing and deployment preparation will culminate the transformation process
 
 ## 🔧 Advanced Migration Patterns
 
-### **Legacy Technology Mappings (Examples)**
-- **PowerBuilder → Angular + Java**: Component-based UI with RESTful backend
-- **VB6 → React + Node.js**: Modern JavaScript stack migration
-- **COBOL → Python + Django**: Legacy mainframe to modern web
-- **Delphi → Vue.js + .NET Core**: Desktop to cloud-native web
-- **FoxPro → React + MongoDB**: Legacy database to modern NoSQL  
-- **Desktop Apps → Web Apps**: Transform desktop applications to web-based interfaces
-- **Legacy Databases → Modern APIs**: Convert data access patterns to RESTful APIs
-- **Legacy Languages → Modern Languages**: Convert business logic to modern programming languages
-- **Monolithic → Microservices**: Break down monolithic applications into scalable services
+### **Sophisticated Legacy Technology Transformations (Exemplars)**
+- **PowerBuilder → Angular + Java**: Component-based user interfaces with robust RESTful backend architectures
+- **VB6 → React + Node.js**: Complete modern JavaScript ecosystem migration with enhanced performance
+- **COBOL → Python + Django**: Legacy mainframe transformation to contemporary web-based solutions
+- **Delphi → Vue.js + .NET Core**: Desktop application evolution to cloud-native web architectures
+- **FoxPro → React + MongoDB**: Legacy database systems transformed to modern NoSQL ecosystems
+- **Desktop Applications → Web Platforms**: Comprehensive transformation of desktop interfaces to web-based experiences
+- **Legacy Databases → Modern APIs**: Strategic conversion of data access patterns to RESTful API architectures
+- **Legacy Languages → Contemporary Frameworks**: Business logic transformation to modern programming paradigms
+- **Monolithic Systems → Microservices**: Architectural decomposition into scalable, distributed service architectures
 
-### **Data Migration Strategies**
-- **Schema Preservation**: Maintain existing database structure when possible
-- **Data Validation**: Ensure data integrity throughout migration process
-- **Incremental Migration**: Support phased migration approaches
-- **Rollback Planning**: Provide fallback strategies for migration issues
+### **Strategic Data Migration Methodologies**
+- **Schema Intelligence**: Preserves existing database structures while implementing modern optimizations
+- **Data Integrity Assurance**: Comprehensive validation protocols ensure data consistency throughout migration
+- **Incremental Migration Support**: Sophisticated phased migration approaches minimize operational disruption
+- **Rollback Strategy Planning**: Comprehensive fallback mechanisms for migration contingencies
 
 ## 📋 Prerequisites
 
-- **Legacy Application**: Any legacy application ready for analysis
-- **Development Environment**: Modern development tools as per target technology stack
-- **Database**: Compatible database system (varies by technology choice)
-- **IDE**: With AI assistant capabilities
+- **Legacy Application**: Any legacy system prepared for comprehensive analysis and transformation
+- **Modern Development Environment**: Contemporary development toolchain aligned with target technology specifications
+- **Database Infrastructure**: Compatible database systems optimized for chosen technology stack
+- **Integrated Development Environment**: Advanced IDE with AI assistant capabilities for enhanced productivity
 
 ## 🔧 Advanced Configuration
 
-For advanced control over the migration process, the system supports:
+For sophisticated control over the migration process, this system provides extensive customization options:
 
-- Custom migration rules and patterns
-- Specific technology stack preferences  
-- Performance and security requirements
-- Integration with existing systems
-- Phased migration approaches
+- **Custom Migration Rules**: Tailored transformation patterns specific to your organizational requirements
+- **Technology Stack Optimization**: Precise technology preferences with performance-driven selections
+- **Security & Performance Requirements**: Advanced security protocols and performance optimization specifications
+- **Enterprise System Integration**: Seamless integration capabilities with existing enterprise infrastructure
+- **Phased Migration Strategies**: Sophisticated approaches for gradual, risk-managed transformation processes
 
 ## 🚀 Success Metrics
 
-The migration process ensures:
-- **100% Functional Parity**: All legacy functionality preserved
-- **Modern Architecture**: Scalable modern technology implementation
-- **Business Logic Preservation**: All business rules maintained
-- **Performance Optimization**: Modern performance patterns applied
-- **Production Ready**: Complete applications with testing instructions
+This comprehensive migration process guarantees exceptional outcomes:
+
+- **100% Functional Parity**: Complete preservation and enhancement of all legacy functionality
+- **Modern Architecture Excellence**: Implementation of scalable, contemporary technology patterns
+- **Business Logic Preservation**: Meticulous maintenance of all critical business rules and processes
+- **Performance Optimization**: Application of modern performance patterns for enhanced user experience
+- **Production Readiness**: Delivery of complete, thoroughly tested applications with comprehensive documentation
 
 ## 🚨 Important Notes
 
-1. **Start with Legacy App in Place**: Ensure your legacy application is ready for analysis in the `legacy_app/` folder
-2. **Specify Technology Stacks**: Clearly mention both legacy and target technology stacks in the prompts
-3. **Let AI Handle Structure**: The AI will create the proper folder structure and organization
-4. **Trust the Process**: Follow the phases sequentially - each builds on the previous
-5. **Review Generated Documents**: Check BRD and BRED documents for accuracy before implementation
-6. **Test Thoroughly**: The final phase ensures everything works correctly
+### **Critical Success Factors:**
+
+1. **Legacy Application Readiness**: Ensure your legacy application is optimally positioned for analysis within the `legacy_app/` directory
+2. **Technology Stack Specification**: Clearly articulate both legacy and target technology stacks in all prompts for optimal results
+3. **AI-Driven Structure Management**: Trust the AI to create optimal folder structures and organizational frameworks
+4. **Sequential Process Adherence**: Follow the transformation phases methodically—each phase builds upon previous achievements
+5. **Documentation Review Excellence**: Thoroughly review generated BRD and BRED documents for accuracy before implementation phases
+6. **Comprehensive Testing Protocol**: The final validation phase ensures complete functional excellence
 
 ## 🔧 Quick Troubleshooting
 
-**If migration stalls:**
-- Check that `project_config.md` has been updated with your specific goals
-- Ensure `workflow_state.md` shows the current phase and status
-- Verify that BRD and BRED documents are complete before implementation
+### **Migration Process Optimization:**
 
-**If code generation fails:**
-- Confirm all requirements are documented in BRD
-- Check that BRED contains specific technical mapping rules
-- Ensure project_config.md specifies the correct technology stack
+**If migration progress stalls:**
+- Verify that `project_config.md` contains your specific transformation objectives and technical requirements
+- Confirm that `workflow_state.md` accurately reflects current phase status and operational readiness
+- Validate that BRD and BRED documents are comprehensively completed before proceeding to implementation
 
-**If testing fails:**
-- Validate that all business logic from BRD is implemented
-- Check that database connections are properly configured
-- Ensure frontend and backend are communicating correctly
+**If code generation encounters issues:**
+- Ensure all requirements are thoroughly documented within the BRD framework
+- Verify that BRED contains specific, actionable technical mapping rules and transformation guidelines
+- Confirm that `project_config.md` accurately specifies the target technology stack with appropriate detail
+
+**If testing protocols fail:**
+- Validate that all business logic from BRD specifications has been successfully implemented
+- Verify that database connections are properly configured with appropriate security protocols
+- Ensure frontend and backend systems are communicating effectively with optimized data flow
 
 ## 📝 Example Migration Flow
 
-1. **Place Legacy App**: Copy legacy application to `legacy_app/`
-2. **Start Analysis**: AI analyzes structure and extracts requirements
-3. **Generate Documents**: BRD and BRED created automatically
-4. **Build Modern App**: Modern frontend and backend generated
-5. **Test and Validate**: Comprehensive testing ensures functional parity
-6. **Deploy**: Production-ready application with full documentation
+### **Streamlined Transformation Process:**
 
-## Migration-Specific Etiquette
+1. **Legacy Application Deployment**: Position legacy application within the designated `legacy_app/` directory
+2. **Intelligent Analysis Initiation**: AI conducts comprehensive structural analysis and requirements extraction
+3. **Documentation Generation**: BRD and BRED documents are automatically created with precision
+4. **Modern Application Development**: Contemporary frontend and backend systems are generated according to specifications
+5. **Comprehensive Testing & Validation**: Rigorous testing protocols ensure complete functional parity
+6. **Production Deployment**: Delivery of production-ready application with comprehensive documentation
 
-• **Always start with project setup** - Create proper folder structure before analysis
-• **Prioritize business requirements** - BRD and BRED documents are critical for success
-• **Follow extraction-based development** - Implementation must match extracted requirements
-• **Validate functional parity** - Modern application must preserve all legacy functionality
-• **Generate complete, production-ready code** - No TODOs or placeholders in final deliverables
-• **Provide comprehensive testing instructions** - Include both backend and frontend testing procedures
-• **Document migration decisions** - Keep clear records of why specific technical choices were made
+## Migration-Specific Guidelines
+
+### **Excellence-Driven Development Principles:**
+
+• **Foundation-First Approach** - Establish proper project structure before initiating analysis phases
+• **Requirements-Driven Excellence** - BRD and BRED documents serve as the cornerstone for successful migration
+• **Extraction-Based Development** - Implementation must precisely match extracted requirements and specifications
+• **Functional Parity Validation** - Modern applications must preserve and enhance all legacy functionality
+• **Production-Ready Code Generation** - Deliver complete, professional-grade code without placeholders or incomplete sections
+• **Comprehensive Testing Documentation** - Include detailed testing procedures for both backend and frontend systems
+• **Decision Documentation Excellence** - Maintain clear, detailed records of all technical decisions and their rationale
 
 ## 🤝 Support
 
-This workflow system provides autonomous migration capabilities while maintaining full transparency through detailed logging and documentation. The AI handles complex migration tasks while preserving critical business logic and ensuring modern best practices.
+This advanced workflow system delivers autonomous migration capabilities while maintaining complete transparency through sophisticated logging and comprehensive documentation. The AI intelligently manages complex migration challenges while preserving critical business logic and ensuring adherence to modern development excellence.
 
-This enhanced workflow ensures comprehensive legacy application modernization with full business requirement preservation and technical excellence.
+This enhanced workflow framework ensures comprehensive legacy application modernization with complete business requirement preservation and technical excellence that exceeds industry standards.
 
 ## 📄 License
 
-This project concept is licensed under the MIT License - see the LICENSE file for details. 
+This innovative project concept is licensed under the MIT License - see the LICENSE file for comprehensive details. 
