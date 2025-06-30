@@ -5,6 +5,7 @@ A sophisticated autonomous AI workflow system expertly engineered for seamlessly
 ## Table of Contents
 
 - [🎯 What This Does](#-what-this-does)
+- [📋 Project Scope & Objectives](#-project-scope--objectives)
 - [🏗️ Detailed Migration Workflow: Copy & Paste System Prompt](#️-detailed-migration-workflow-copy--paste-system-prompt)
   - [STEP 1: Project Structure Setup](#step-1-project-structure-setup)
   - [STEP 2: Legacy Application Analysis](#step-2-legacy-application-analysis)
@@ -37,9 +38,70 @@ This sophisticated system delivers a methodical, autonomous approach to legacy a
 - **Automated Implementation Excellence**: Generates robust, production-ready modern applications that faithfully follow extracted requirements
 - **Rigorous Quality Assurance**: Guarantees complete functional parity while preserving critical business logic throughout the entire transformation process
 
+## 📋 Project Scope & Objectives
+
+### **🎯 Primary Objectives**
+This modernization framework is designed to achieve complete transformation of legacy applications while maintaining business continuity and enhancing system capabilities:
+
+#### **Legacy Application Coverage**
+- **Desktop Applications**: Windows Forms, WPF, VB6, Delphi, PowerBuilder applications
+- **Web Applications**: Classic ASP, PHP, ColdFusion, JSP legacy web systems
+- **Database Systems**: Access, FoxPro, dBase, legacy SQL Server, Oracle systems
+- **Mainframe Applications**: COBOL, FORTRAN, and other mainframe-based systems
+- **Client-Server Applications**: Traditional 2-tier and 3-tier architectures
+
+#### **Modern Technology Targets**
+- **Frontend Frameworks**: React, Angular, Vue.js, Blazor, modern responsive web applications
+- **Backend Technologies**: .NET Core, Node.js, Python Django/Flask, Java Spring, Go
+- **Database Systems**: SQL Server, PostgreSQL, MySQL, MongoDB, Azure Cosmos DB
+- **Cloud Platforms**: Azure, AWS, Google Cloud deployment-ready architectures
+- **Architecture Patterns**: Microservices, RESTful APIs, serverless, containerized applications
+
+### **🔄 Migration Process Scope**
+
+#### **Included in Migration**
+✅ **Complete functional analysis and documentation**  
+✅ **Business requirements extraction and validation**  
+✅ **Technical architecture redesign and modernization**  
+✅ **Data migration strategy and implementation**  
+✅ **User interface modernization with responsive design**  
+✅ **API development and integration planning**  
+✅ **Security enhancement and compliance updates**  
+✅ **Performance optimization and scalability improvements**  
+✅ **Testing strategy and quality assurance framework**  
+✅ **Deployment planning and environment setup guidance**  
+
+#### **Project Boundaries**
+⚠️ **Third-party integrations** - Documented but require separate implementation  
+⚠️ **Custom hardware dependencies** - Alternatives recommended, manual migration required  
+⚠️ **Legacy reporting tools** - Modern equivalents suggested, custom development needed  
+⚠️ **Specialized legacy protocols** - Modern alternatives provided, integration assistance required  
+
+### **📊 Success Criteria & Deliverables**
+
+#### **Technical Deliverables**
+- **Comprehensive Documentation Suite**: BRD, BRED, architecture documents, and migration guides
+- **Modern Application Codebase**: Fully functional frontend and backend applications
+- **Database Migration Scripts**: Complete data transformation and migration utilities
+- **Testing Framework**: Automated tests ensuring functional parity and performance
+- **Deployment Package**: Production-ready deployment configurations and guides
+
+#### **Business Deliverables**
+- **100% Functional Parity**: All legacy features preserved and enhanced
+- **Performance Improvements**: Measurable speed and efficiency gains
+- **Modern User Experience**: Enhanced usability and responsive design
+- **Scalability Foundation**: Architecture ready for future growth and expansion
+- **Reduced Technical Debt**: Clean, maintainable, and well-documented codebase
+
+### **⏱️ Project Timeline & Phases**
+- **Phase 1**: Analysis & Documentation (15-25% of timeline)
+- **Phase 2**: Requirements Engineering (20-30% of timeline)
+- **Phase 3**: Modern Application Development (40-50% of timeline)
+- **Phase 4**: Testing, Validation & Deployment (15-20% of timeline)
+
 ## 🏗️ Detailed Migration Workflow: Copy & Paste System Prompt
 
-**Leverage this comprehensive system prompt in your AI Agent chat to initiate the transformation of your legacy application into a modern technology stack masterpiece:**
+**Following the scope and objectives defined above, leverage this comprehensive system prompt in your AI Agent chat to initiate the complete transformation of your legacy application into a modern technology stack masterpiece. This workflow implements all the deliverables and success criteria outlined in the project scope:**
 
 **STEP 1: Project Structure Setup**
 - Create the file structure below.
@@ -86,6 +148,7 @@ Migration Tasks
    1. Perform an exhaustive walkthrough of the legacy application (all front-end and back-end paths).
    2. Capture at minimum:
       - Project overview
+      - Scope of the legacy application (system boundaries, in-scope vs. out-of-scope modules, major stakeholders, data flows)
       - Functional & non-functional requirements
       - Business rules
       - Use cases
@@ -112,17 +175,18 @@ Migration Tasks
    2. Place outputs in modern_app/database/ (file names: db_<topic>.md).
 
 5. Document Overall System Architecture
-   1. System-level: component, data, security, deployment, migration, monitoring/observability *(add extra relevant subsections, omit non-applicable ones).*
-   2. Frontend: project structure, component hierarchy, state management, real-time communication, service registration & configuration, styling/theme, performance optimisation *(extend/trim as needed).*
-   3. API design: endpoints, authentication & authorization, module APIs, error handling, rate limiting, versioning *(extend/trim as needed).*
+   1. System-level: component, data, security, deployment, migration, monitoring/observability (add extra relevant subsections, omit non-applicable ones).
+   2. Frontend: project structure, component hierarchy, state management, real-time communication, service registration & configuration, styling/theme, performance optimisation (extend/trim as needed).
+   3. API design: endpoints, authentication & authorization, module APIs, error handling, rate limiting, versioning (extend/trim as needed).
    4. Database: reference work from Task 4.
    5. Save files in modern_app/architecture/ (names: arch_<layer>.md).
 
+---
 Conventions & Governance
 
 1. Directory & File-Naming
    - Use lowercase, hyphen-separated names (brd_customer-management.md).
-   - All documents are Markdown (.md) that begin with an H1 title and <!-- [toc] --> for auto TOC.
+   - All documents are Markdown (.md) beginning with an H1 title and <!-- [toc] --> for auto-generated TOC.
 
 2. Diagrams
    - Embed Mermaid or PlantUML snippets inline.
@@ -154,18 +218,19 @@ Conventions & Governance
 
 10. Deliverable Checklist (for workflow promotion)
     - project_config.md updated.
-    - All BRDs in modern_app/extracted_brd/.
+    - All BRDs (including legacy scope) in modern_app/extracted_brd/.
     - All BREDs in modern_app/extracted_bred/.
     - Legacy DB docs in modern_app/database/.
     - Architecture docs (and diagrams) in modern_app/architecture/ + modern_app/architecture/diagrams/.
     - traceability_matrix.md present.
     - progress-summary.md updated after every task.
 
+---
 Etiquette
 
 - Do not modify workflow_state.md at this stage.
 - For every section or subtopic listed above, add it if the legacy application requires it, and omit it if it is not applicable.
-- Any folders/documents you are creating, create it only inside modern_app folder.
+- Any new folders/documents you create must reside only inside the modern_app/ folder.
 '''
 
 **STEP 4: Follow Migration Instructions**
@@ -370,10 +435,21 @@ This sophisticated system automatically generates comprehensive, professional-gr
 
 ## 📋 Prerequisites
 
-- **Legacy Application**: Any legacy system prepared for comprehensive analysis and transformation
-- **Modern Development Environment**: Contemporary development toolchain aligned with target technology specifications
-- **Database Infrastructure**: Compatible database systems optimized for chosen technology stack
-- **Integrated Development Environment**: Advanced IDE with AI assistant capabilities for enhanced productivity
+### **Legacy Application Requirements**
+- **Supported Legacy Systems**: Applications covered in project scope (Desktop, Web, Database, Mainframe, Client-Server)
+- **Application Access**: Complete source code, database access, and documentation (if available)
+- **System Understanding**: Basic knowledge of current application functionality and business processes
+
+### **Modern Development Environment**
+- **Development Tools**: Contemporary toolchain aligned with target technology specifications (as defined in scope)
+- **Cloud Access**: Account access for chosen cloud platform (Azure, AWS, or Google Cloud)
+- **Database Systems**: Modern database infrastructure compatible with migration targets
+- **Development IDE**: Advanced IDE with AI assistant capabilities for enhanced productivity
+
+### **Project Resources**
+- **Stakeholder Availability**: Business users for requirements validation and testing
+- **Technical Resources**: Development team familiar with target modern technologies
+- **Infrastructure Access**: Development, testing, and production environment provisioning capability
 
 ## 🔧 Advanced Configuration
 
@@ -387,24 +463,38 @@ For sophisticated control over the migration process, this system provides exten
 
 ## 🚀 Success Metrics
 
-This comprehensive migration process guarantees exceptional outcomes:
+This comprehensive migration process delivers all outcomes defined in the project scope and guarantees exceptional transformation results:
 
-- **100% Functional Parity**: Complete preservation and enhancement of all legacy functionality
-- **Modern Architecture Excellence**: Implementation of scalable, contemporary technology patterns
-- **Business Logic Preservation**: Meticulous maintenance of all critical business rules and processes
-- **Performance Optimization**: Application of modern performance patterns for enhanced user experience
+### **Technical Success Metrics**
+- **100% Functional Parity**: Complete preservation and enhancement of all legacy functionality as specified in scope
+- **Modern Architecture Excellence**: Implementation of scalable, contemporary technology patterns from target technology list
+- **Performance Optimization**: Measurable improvements in speed, efficiency, and user experience
 - **Production Readiness**: Delivery of complete, thoroughly tested applications with comprehensive documentation
+
+### **Business Success Metrics**
+- **Business Logic Preservation**: Meticulous maintenance of all critical business rules and processes
+- **User Experience Enhancement**: Modern, responsive interfaces that improve usability and accessibility
+- **Scalability Foundation**: Architecture ready for future growth and technology evolution
+- **Reduced Technical Debt**: Clean, maintainable codebase following modern development standards
+
+### **Project Success Metrics**
+- **Timeline Adherence**: Completion within the 4-phase timeline structure defined in scope
+- **Deliverable Quality**: All technical and business deliverables meet or exceed specified criteria
+- **Stakeholder Satisfaction**: Business users validate functionality and approve modern application
+- **Knowledge Transfer**: Complete documentation and training materials for ongoing maintenance
 
 ## 🚨 Important Notes
 
 ### **Critical Success Factors:**
 
-1. **Legacy Application Readiness**: Ensure your legacy application is optimally positioned for analysis within the `legacy_app/` directory
-2. **Technology Stack Specification**: Clearly articulate both legacy and target technology stacks in all prompts for optimal results
-3. **AI-Driven Structure Management**: Trust the AI to create optimal folder structures and organizational frameworks
-4. **Sequential Process Adherence**: Follow the transformation phases methodically—each phase builds upon previous achievements
-5. **Documentation Review Excellence**: Thoroughly review generated BRD and BRED documents for accuracy before implementation phases
-6. **Comprehensive Testing Protocol**: The final validation phase ensures complete functional excellence
+1. **Project Scope Alignment**: Ensure your legacy application falls within the supported systems defined in the project scope section
+2. **Legacy Application Readiness**: Ensure your legacy application is optimally positioned for analysis within the `legacy_app/` directory
+3. **Technology Stack Specification**: Clearly articulate both legacy and target technology stacks from the scope-defined options in all prompts for optimal results
+4. **AI-Driven Structure Management**: Trust the AI to create optimal folder structures and organizational frameworks
+5. **Sequential Process Adherence**: Follow the transformation phases methodically according to the defined timeline—each phase builds upon previous achievements
+6. **Documentation Review Excellence**: Thoroughly review generated BRD and BRED documents for accuracy before implementation phases
+7. **Scope Boundary Awareness**: Understand project boundaries defined in scope - some integrations may require additional manual work
+8. **Comprehensive Testing Protocol**: The final validation phase ensures complete functional excellence and meets all success criteria
 
 ## 🔧 Quick Troubleshooting
 
