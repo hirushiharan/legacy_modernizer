@@ -130,7 +130,7 @@ your_project/
 
 **STEP 2: Legacy Application Analysis**
 
-'''From this project structure analyse the Legacy App Project Structure, Core Application Modules, Database, Key features and Technology Stack'''
+'''From this project structure analyse the Legacy App Project Structure, Core Application Modules, Database, dependancies, Key features and Technology Stack'''
 
 **STEP 3: Requirements Engineering**
 
@@ -175,13 +175,30 @@ Migration Tasks
    2. Place outputs in modern_app/database/ (file names: db_<topic>.md).
 
 5. Document Overall System Architecture
-   1. System-level: component, data, security, deployment, migration, monitoring/observability (add extra relevant subsections, omit non-applicable ones).
+   1. System-level: component, data, security, deployment, migration, monitoring/observability of both legacy app & modern app (add extra relevant subsections, omit non-applicable ones).
    2. Frontend: project structure, component hierarchy, state management, real-time communication, service registration & configuration, styling/theme, performance optimisation (extend/trim as needed).
    3. API design: endpoints, authentication & authorization, module APIs, error handling, rate limiting, versioning (extend/trim as needed).
    4. Database: reference work from Task 4.
    5. Save files in modern_app/architecture/ (names: arch_<layer>.md).
 
+6. Create Technical Specifications
+   1. Specify runtime environments, language/framework versions, build pipelines, logging/monitoring standards, error-handling strategy, compliance constraints, performance baselines, capacity planning, deployment topologies of both legacy app & modern app.
+   2. Include configuration keys and default values for all environments (dev/stage/prod).
+   3. Save as modern_app/specs/technical_specs.md.
+
+7. Generate Data Dictionary
+   1. For every table/collection in legacy app: list column/field name, data type, allowed values, default, nullability, constraints, description, and relationships.
+   2. Provide mapping notes from legacy data artefacts to <DATABASE>.
+   3. Save as modern_app/database/data_dictionary.md.
+
+8. Compile Dependency Manifest
+   1. Legacy dependencies: libraries, frameworks, OS packages, third-party services.
+   2. Modern dependencies: NuGet (backend), npm/pnpm (frontend), container base images, system packages.
+   3. Mark licence type and version for each dependency.
+   4. Save as modern_app/dependencies/dependency_manifest.md.
+
 ---
+
 Conventions & Governance
 
 1. Directory & File-Naming
@@ -193,7 +210,7 @@ Conventions & Governance
    - Larger images go to modern_app/architecture/diagrams/ (PNG or SVG, 16:9 aspect).
 
 3. Cross-Referencing & Traceability
-   - Link related sections across BRD, BRED and architecture docs with relative paths.
+   - Link related sections across BRD, BRED, architecture docs, and specs with relative paths.
    - Provide a traceability matrix (traceability_matrix.md) mapping legacy items to modern components.
 
 4. Definition of Done / Quality Gates
@@ -220,16 +237,19 @@ Conventions & Governance
     - project_config.md updated.
     - All BRDs (including legacy scope) in modern_app/extracted_brd/.
     - All BREDs in modern_app/extracted_bred/.
-    - Legacy DB docs in modern_app/database/.
+    - Legacy DB docs and data dictionary in modern_app/database/.
     - Architecture docs (and diagrams) in modern_app/architecture/ + modern_app/architecture/diagrams/.
+    - Technical specs in modern_app/specs/.
+    - Dependency manifest in modern_app/dependencies/.
     - traceability_matrix.md present.
-    - progress-summary.md updated after every task.
+    - progress-summary.md updated after every task inside modern_app/.
 
 ---
+
 Etiquette
 
 - Do not modify workflow_state.md at this stage.
-- For every section or subtopic listed above, add it if the legacy application requires it, and omit it if it is not applicable.
+- For every section or subtopic above, add it if the legacy application requires it, and omit it if it is not applicable.
 - Any new folders/documents you create must reside only inside the modern_app/ folder.
 '''
 
