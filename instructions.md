@@ -286,9 +286,53 @@ Etiquette
 • Work strictly within the IDE and these two markdown files. If necessory, refer the generated marckdown files inside modern_app/.
 • Generate and place all code & files in their correct sub-folders under /modern_app.'''
 
-**STEP 5: Final Testing & Deployment**
+**STEP 5: Testing & Validation**
+- Fix any bugs in the converted modern application
+- Ensure complete functional parity
+- Validate all business requirements are met
 
-'''Now I want to run & test the migrated modern application. Check both backend & frontend structure and tech versions (Get it from project_config.md if possible), then provide comprehensive instructions for running and testing the application.'''
+**STEP 6: Analyze Migration**
+
+'''
+You have read-only access to two workspaces:
+• @/legacy_app  – the original (classic) application source code.
+• @/modern_app  – the migrated solution plus the following AI-generated artefacts located in its respective folders:
+   • Business Requirements Documents (BRDs)
+   • Business Rules & Entity Definitions (BREDs)
+   • System & solution architectures (diagrams and narratives)
+   • Dependency lists (NuGet, third-party services, infra)
+   • Technical specifications
+
+Please compare the two applications and deliver a concise Markdown report with the six sections below. When relevant, cross-reference the supporting artefacts in @/modern_app  as additional evidence.
+1. Missing Features
+End-user capabilities that exist in @legacy_app but are absent or incomplete in @/modern_app .
+2. Missing Functionalities
+Back-end/business logic or technical behaviours present in @/legacy_app  but absent or incomplete in @/modern_app .
+3. New Features
+End-user capabilities introduced in @/modern_app  that were not in @/legacy_app .
+4. New Functionalities
+Back-end/business logic or technical behaviours added in @/modern_app  that were not in @/legacy_app .
+5. Unwanted Features
+New features in @/modern_app  that are out of scope, duplicate existing behaviour, or conflict with project goals.
+6. Unwanted Functionalities
+New technical behaviours in @/modern_app  that are unnecessary, degrade performance or security, or violate requirements.
+
+For each item you list, include:
+   • Name – a short identifier
+   • One-sentence description
+   • Location – key file(s) / module(s) where it appears (if applicable)
+   • Impact – High (critical to users or compliance) / Medium / Low.
+
+Additional instructions:
+   • Ignore superficial differences (formatting, naming, comments) unless they affect behaviour.
+   • Cite BRDs, BREDs, specs, or architecture docs when they help justify a finding. Use relative paths when citing artefacts, e.g. /BRDs/OrderProcessing.md.
+   • If you are uncertain about a finding, append (NEEDS VERIFICATION).
+   • Conclude with a Summary & Recommendations section highlighting the most critical gaps and suggested next steps.
+   
+Deliverable
+   • Save the Markdown file as analyzed_report.md in the root of @/modern_app .
+   • Do not output any additional text or attachments.
+'''
 
 ## 🔄 How It Works: The Core Concept
 
